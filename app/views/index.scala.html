@@ -1,0 +1,29 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(webJarAssets: WebJarAssets, message: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Play-MQTT", webJarAssets) {
+
+    <div class="container">
+        <ul id="dataset"></ul>
+        <form id="dataForm" method="post" action="/tsdata">
+            <label for="dataStation">Station</label>
+            <input id="dataStation" required>
+            <label for="dataStatus">Status</label>
+            <input id="dataStatus" required>
+            <label for="dataTemp">Temperature</label>
+            <input id="dataTemp" required>
+            <label for="dataHumid">Humidity</label>
+            <input id="dataHumid" required>
+            <button>Add Data</button>
+        </form>
+    </div>
+
+}
