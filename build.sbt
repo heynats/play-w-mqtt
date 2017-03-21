@@ -12,13 +12,15 @@ libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.5.0",
   "org.webjars" % "bootstrap" % "3.3.5",
   "com.google.inject" % "guice" % "4.0",
+  "org.eclipse.paho" % "org.eclipse.paho.client.mqttv3" % "1.0.2",
   specs2 % Test
 )
 
 dependencyOverrides += "org.scala-lang" % "scala-compiler" % scalaVersion.value
 
 resolvers ++= Seq(
-  "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
+  "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
+  "MQTT Repository" at "https://repo.eclipse.org/content/repositories/paho-releases/"
 )
 
 routesGenerator := InjectedRoutesGenerator
