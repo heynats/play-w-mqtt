@@ -1,14 +1,17 @@
-This is your new Play application
-=================================
+Play with MQTT (derived from play-scala template)
+=================================================
+
+README itself is a to-do :P
+
+
+--- from template ---
 
 This file will be packaged with your application when using `activator dist`.
-
-There are several demonstration files available in this template.
 
 Controllers
 ===========
 
-- HomeController.scala:
+- Application.scala:
 
   Shows how to handle simple HTTP requests.
 
