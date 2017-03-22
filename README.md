@@ -1,10 +1,10 @@
-#Play with MQTT (derived from play-scala template)
+# Play with MQTT (derived from play-scala template)
 
-##Prerequisites
+## Prerequisites
 
 Before cloning this repo, please make sure sbt and activator are installed.
 Install sbt on a Mac it's simple as `$ brew install sbt`
-or visit www.scala-sbt.org/download.html
+or visit http://www.scala-sbt.org/download.html
 
 To install activator go to http://www.lightbend.com/activator/download
 and I recommend download the ~671M zip instead of the mini-package, unless
@@ -19,14 +19,14 @@ Make sure activator script is executable with
 ```
 $ chmod u+x /path/to/activator-x.x.x/bin/activator
 ```
-######MQTT Server
+###### MQTT Server
 
 The project connects to a local broker, mosquitto, by default. If you wish to use
 another MQTT broker, please change the mqtt-broker parameters in application.conf
 
 To get mosquitto on your machine, please visit https://mosquitto.org/download/
 
-##Clone this project
+## Clone this project
 
 After above is done you can clone this repo to your local folder, say play-w-mqtt,
 you can then
@@ -35,8 +35,8 @@ $ cd play-w-mqtt
 $ activator
 ```
 to activate the Play console from the project directory.
-Please visit https://www.playframework.com/documentation/2.5.x/Home to learn
-more about the Play console.
+Please checkout [Play framework documentation](https://www.playframework.com/documentation/2.5.x/Home) to learn more
+about the Play console.
 
 A quick reminder, once the Play console is activated, you should see the directory
 name appear before the $ sign in the console, i.e.,
@@ -55,12 +55,11 @@ to run the tests under the test folder, and then
 which are self-explanatory!
 
 
-######--- original details from template ---
+###### --- original details from template ---
 
 This file will be packaged with your application when using `activator dist`.
 
-Controllers
-===========
+###### Controllers
 
 - Application.scala:
 
@@ -75,8 +74,7 @@ Controllers
   Shows how to inject a component into a controller and use the component when
   handling requests.
 
-Components
-==========
+###### Components
 
 - Module.scala:
 
@@ -91,8 +89,7 @@ Components
   An example of a component that starts when the application starts and stops
   when the application stops.
 
-Filters
-=======
+###### Filters
 
 - Filters.scala:
 
