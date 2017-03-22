@@ -24,6 +24,14 @@ Make sure activator script is executable with
 
 $ chmod u+x /path/to/activator-x.x.x/bin/activator
 
+MQTT Server
+===========
+
+The project connects to a local broker, mosquitto, by default. If you wish to use
+another MQTT broker, please change the mqtt-broker parameters in application.conf
+
+To get mosquitto on your machine, please visit https://mosquitto.org/download/
+
 Clone this project
 ==================
 
